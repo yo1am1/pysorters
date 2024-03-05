@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name="pysorters",
-    version="0.5.1",
+    version="0.5.3",
     author="yo1",
     author_email="bigdiebam@gmail.com",
     description="A package with all sorting algorithms.",
@@ -37,6 +37,12 @@ setuptools.setup(
         "bubble sort",
         "merge sort",
         "quick sort",
+        "insertion sort",
+        "selection sort",
+        "heap sort",
+        "radix sort",
+        "counting sort",
+        "bucket sort",
         "sort",
         "sorting",
         "algorithms",
