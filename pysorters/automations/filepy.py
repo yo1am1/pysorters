@@ -193,7 +193,7 @@ class Sweepy(Pyxplorer):
     This class is used to sweep files and folders.
     """
 
-    def __init__(self, path: str) -> None:
+    def __init__(self, path: str = None) -> None:
         """
         Initialize Sweepy class
 
@@ -242,6 +242,8 @@ class Sweepy(Pyxplorer):
                         f"File '{os.path.basename(file)}' already exists in '{dest_folder}'. Skipping..."
                     )
 
+        return print("Successfully sorted")
+
     # def date_created_sort(self) -> None:
     #     """
     #     Sort files by date created
@@ -249,7 +251,7 @@ class Sweepy(Pyxplorer):
     #     # TODO: Implement date_created_sort method
     #     pass
 
-    def reverse(self, path: str = None) -> None:
+    def reverse_ext(self, path: str = None) -> None:
         """
         Reverse the files and folders
 
@@ -273,6 +275,8 @@ class Sweepy(Pyxplorer):
 
             os.rmdir(os.path.join(self.path, folder).replace("/", "\\"))
 
+        return print("Successfully reversed")
+
 
 if __name__ == "__main__":
     p = Pyxplorer("C:\\Users\\Asus-Users\\PycharmProjects\\sorters\\pysorters_prj")
@@ -289,7 +293,8 @@ if __name__ == "__main__":
 
     sweepy = Sweepy("C:\\TEST_FOLDER")
 
-    sweepy.extension_sort()
+    # sweepy.extension_sort(
+    sweepy.reverse_ext()
 
     # p.create_folder('test')
     #

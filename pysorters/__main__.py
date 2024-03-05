@@ -24,6 +24,8 @@ print(f"Merge sort: {sorted_array}")
 
 sorted_array = sort.quick_sort(array)
 print(f"Quick sort: {sorted_array}")
+
+And so much more!
 """
 )
 
