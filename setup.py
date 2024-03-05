@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name="pysorters",
-    version="0.5.3",
+    version="0.5.4",
     author="yo1",
     author_email="bigdiebam@gmail.com",
     description="A package with all sorting algorithms.",
