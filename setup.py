@@ -3,7 +3,7 @@ import pathlib
 import setuptools
 
 setuptools.setup(
-    name="pysorters_project",
+    name="pysorters",
     version="0.5.1",
     author="yo1",
     author_email="bigdiebam@gmail.com",
