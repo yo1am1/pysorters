@@ -7,6 +7,8 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pysorters)
 ![GitHub repo size](https://img.shields.io/github/repo-size/yo1am1/pysorters)
 ![PyPI - Version](https://img.shields.io/pypi/v/pysorters)
+![GitHub Tag](https://img.shields.io/github/v/tag/yo1am1/pysorters)
+
 
 Python package with sort methods for everything you could even imagine! :rocket: :rocket: :rocket:
 
