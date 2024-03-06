@@ -138,6 +138,19 @@ class Pyxplorer:
         else:
             raise ValueError("File does not exist")
 
+    def remove_dir(self, path: str = None) -> None:
+        """
+        Remove directory
+
+        :param path:
+        :type path: str
+        :return None:
+        """
+        if os.path.basename(path) in self.__folders:
+            os.rmdir(path)
+        else:
+            raise ValueError("Folder does not exist")
+
     def __delete_folder(self, path: str = None) -> None:
         """
         Delete folder
@@ -270,8 +283,8 @@ class Sweepy(Pyxplorer):
             for file in files:
                 if file.split(".")[-1] == folder:
                     # fmt: pass
-                    self.move(os.path.join(self.path, f"{folder + "/" + file}").replace('/', '\\'),
-                              f"{(self.path + '/').replace('/', '\\')}")
+                    self.move(os.path.join(self.path, f"{folder}/{file}").replace('/', '\\'),
+                              f"{self.path}/".replace('/', '\\'))
 
             os.rmdir(os.path.join(self.path, folder).replace("/", "\\"))
 
